@@ -1,0 +1,138 @@
+
+.Home_main{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+section {
+    margin: 0 35px;
+    text-align: center;
+}
+.card{
+    margin: 7px auto;
+    text-align: center;
+}
+.card-img-top{
+    width: 100%;
+    min-height: 25rem;
+    max-height: 35rem;
+    transition:.5s all;
+    cursor:pointer;
+}
+
+.card-body{
+    margin: -104px 10px 0 10px;
+}
+
+.det{
+   color: #fff;
+   font-weight: 600;
+   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+   display: flex ;
+   transition:1s all;
+   border-radius: 20px 20px 20px 20px;
+   cursor: pointer;
+   justify-content: space-between
+   
+}
+.det-img{
+    color: #fff;
+    font-weight: 600;
+    display: flex ;
+    transition:1s all;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+}
+.det:hover{
+    color: #fff;
+    font-weight: 600;
+    display: flex ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+ }
+.det_img{
+    border-radius: 50px;
+    padding: 3px 6px;
+}
+.det p{
+    padding-top: 20px;
+    padding-left: 4px;
+}
+.likes{
+    display: flex;
+    padding-top: 23px;
+    padding-left: 10px;
+    padding-right:13px;
+}
+.likes h6{
+    padding-left: 5px;
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 980px) {
+    section {
+        margin: 0 15px;
+        text-align: center;
+      }
+    .card{
+        margin: 8px auto;
+        text-align: center;
+    }
+    .card-img-top{
+        width: 100%;
+        min-height: 20rem;
+        max-height: 20rem;
+    }
+
+    .det{
+        color: #000;
+        font-weight: 600;
+        box-shadow: none;
+        display: grid; ;
+        transition:1s all;
+        border-radius: 20px 20px 20px 20px;
+        cursor: pointer;
+        text-align: justify; 
+        
+     }
+     .det-img{
+        color: #000;
+        font-weight: 600;
+        box-shadow: none;
+        display: grid; ;
+        transition:1s all;
+        border-radius: 20px 20px 20px 20px;
+        cursor: pointer;
+        text-align: justify; 
+        margin: 0 auto;
+    }
+     
+     .card-body{
+         width: 100%;
+         margin: 0 auto;
+    }
+    .det_img{
+        border-radius: 50px;
+        padding: 3px 0px;
+    }
+    .det p{
+        padding-top: 20px;
+        padding-left: 4px;
+    }
+    .likes{
+        display: flex;
+        padding-top: 23px;
+        padding-left: 0px;
+        padding-right:0px;
+    }
+    .likes h6{
+        padding-left: 5px;
+        color: #000;
+    }
+    
+    
+    
+    
+    
+  }
