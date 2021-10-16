@@ -7,9 +7,10 @@ import './Css/Main.css'
 import './Css/Navbar.css'
 import './Css/Contact.css'
 import './Css/Footer.css'
+import './Css/popularcat.css'
 import "./bootstrap.min.css"
-
 import 'antd/dist/antd.css';
+
 
 import {BrowserRouter} from 'react-router-dom'
 

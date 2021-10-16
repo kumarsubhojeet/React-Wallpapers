@@ -1,4 +1,6 @@
 import React , {useState} from "react";
+import Carousel from "react-elastic-carousel";
+
 
 import {Link} from 'react-router-dom'
 
@@ -7,6 +9,8 @@ import Maincrousal from '../Components/Main_crousal'
 import Discover from '../Components/Discover'
 import Contact from "../Components/COntact"
 import { BackTop } from 'antd';
+import Popularcat from '../Components/PopularCat'
+
 
 export default function Main_page() {
 
@@ -21,6 +25,14 @@ export default function Main_page() {
     fontSize: 14,
   };
 
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2 },
+    { width: 768, itemsToShow: 5 },
+    { width: 1200, itemsToShow: 4 },
+  ];
+  
+
     const [search , setsearch] = useState("")
 
   
@@ -33,7 +45,7 @@ export default function Main_page() {
           <div class="jumbotron jumbotron-fluid">
             
          <div className="heading">
-             <h1 style={{color: 'white' , fontWeight:'700'}}>React Wallpapers</h1>
+             <h1  class="animate__animated animate__rubberBand" style={{color: 'white' , fontWeight:'700'}}>React Wallpapers</h1>
              <p style={{color: 'white'}}>Fast & Easy way to view and download wallpapers for free.</p>
          </div>
 
@@ -49,24 +61,33 @@ export default function Main_page() {
          <div className="tags_main">
 
          <div className="tags">
-             <h3 style={{marginBottom:'17px' , color:'#fff'}}>Categories</h3>
+           
+             <h3  class="animate__animated animate__bounce" style={{marginBottom:'17px' , color:'#fff'}}>Popular Tags</h3>
          </div>
 
          <div className="tags_cat">
-             <Link to={`/Home/Cars`} style={{textDecoration:'none'}}><p>Cars</p></Link>
-             <Link to={`/Home/Sports`} style={{textDecoration:'none'}}><p>Sports</p></Link>
-             <Link to={`/Home/Nature`} style={{textDecoration:'none'}}><p>Nature</p></Link>
-            <Link to={`/Home/Oceans`} style={{textDecoration:'none'}}> <p>Oceans</p></Link>
-            <Link to={`/Home/Forest`} style={{textDecoration:'none'}}> <p>Forest</p></Link>
-           <Link to={`/Home/Games`} style={{textDecoration:'none'}}>  <p>Games</p></Link>
-             <Link to={`/Home/Mountains`} style={{textDecoration:'none'}}><p>Mountains</p></Link>
-           <Link to={`/Home/Bikes`} style={{textDecoration:'none'}}>  <p>Bikes</p></Link>
-             <Link to={`/Home/Guns`} style={{textDecoration:'none'}}><p>Guns</p></Link>
-             <Link to={`/Home/Aeroplane`} style={{textDecoration:'none'}}><p>Aeroplane</p></Link>
-             <Link to={`/Home/Sky`} style={{textDecoration:'none'}}><p>Sky</p></Link>
-             <Link to={`/Home/Birds`} style={{textDecoration:'none'}}><p>Birds</p></Link>
-             <Link to={`/Home/Animals`} style={{textDecoration:'none'}}><p>Animals</p></Link>
-            <Link to={`/Home/Code`} style={{textDecoration:'none'}}> <p>Code</p></Link>
+         <Carousel breakPoints={breakPoints} enableAutoPlay={true} autoPlaySpeed={3000}>
+             <Link class="animate__animated animate__bounceInDown" to={`/Home/Cars`} style={{textDecoration:'none'}}><p>Cars</p></Link>
+             <Link class="animate__animated animate__bounceInDown" to={`/Home/Sports`} style={{textDecoration:'none'}}><p>Sports</p></Link>
+             <Link class="animate__animated animate__bounceInDown" to={`/Home/Nature`} style={{textDecoration:'none'}}><p>Nature</p></Link>
+            <Link class="animate__animated animate__bounceInDown" to={`/Home/Oceans`} style={{textDecoration:'none'}}> <p>Oceans</p></Link>
+            <Link class="animate__animated animate__bounceInDown" to={`/Home/Forest`} style={{textDecoration:'none'}}> <p>Forest</p></Link>
+           <Link class="animate__animated animate__bounceInDown" to={`/Home/Games`} style={{textDecoration:'none'}}>  <p>Games</p></Link>
+             <Link class="animate__animated animate__bounceInDown" to={`/Home/Mountains`} style={{textDecoration:'none'}}><p>Mountains</p></Link>
+           <Link class="animate__animated animate__bounceInDown" to={`/Home/Bikes`} style={{textDecoration:'none'}}>  <p>Bikes</p></Link>
+             <Link class="animate__animated animate__bounceInDown" to={`/Home/Guns`} style={{textDecoration:'none'}}><p>Guns</p></Link>
+             <Link class="animate__animated animate__bounceInDown" to={`/Home/Aeroplane`} style={{textDecoration:'none'}}><p>Aeroplane</p></Link>
+             <Link class="animate__animated animate__bounceInDown" to={`/Home/Sky`} style={{textDecoration:'none'}}><p>Sky</p></Link>
+             <Link class="animate__animated animate__bounceInDown" to={`/Home/Birds`} style={{textDecoration:'none'}}><p>Birds</p></Link>
+             <Link class="animate__animated animate__bounceInDown" to={`/Home/Animals`} style={{textDecoration:'none'}}><p>Animals</p></Link>
+            <Link class="animate__animated animate__bounceInDown" to={`/Home/Love`} style={{textDecoration:'none'}}> <p>Love</p></Link>
+            <Link class="animate__animated animate__bounceInDown" to={`/Home/Music`} style={{textDecoration:'none'}}> <p>Music</p></Link>
+            <Link class="animate__animated animate__bounceInDown" to={`/Home/Horror`} style={{textDecoration:'none'}}> <p>Horror</p></Link>
+            <Link class="animate__animated animate__bounceInDown" to={`/Home/Flowers`} style={{textDecoration:'none'}}> <p>Flowers</p></Link>
+            <Link class="animate__animated animate__bounceInDown" to={`/Home/Movies`} style={{textDecoration:'none'}}> <p>Movies</p></Link>
+            <Link class="animate__animated animate__bounceInDown" to={`/Home/India`} style={{textDecoration:'none'}}> <p>India</p></Link>
+
+            </Carousel>
          </div>
          </div>
 
@@ -78,13 +99,17 @@ export default function Main_page() {
             <Discover />
           </div>
 
+          <div className="popular_cat">
+            <Popularcat />
+          </div>
+
           
           <div className="crousal_main_page">
               <Maincrousal />
           </div>
 
           <div className="contact_main_page">
-          <h2 style={{color: 'black' , fontWeight:'700'}}>Contact Us</h2>
+          <h2 class="animate__animated animate__wobble" style={{color: 'black' , fontWeight:'700'}}>Feedback</h2>
             <Contact />
           </div>
 

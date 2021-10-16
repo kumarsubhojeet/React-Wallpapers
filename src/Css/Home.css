@@ -19,7 +19,6 @@ section {
     transition:.5s all;
     cursor:pointer;
 }
-
 .card-body{
     margin: -104px 10px 0 10px;
 }

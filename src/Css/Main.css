@@ -30,6 +30,10 @@
 .tags_cat{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
 }
 .tags_cat p{
     background:  #d5d8dc ;
@@ -86,8 +90,12 @@
         box-shadow: none;
     }
     .tags_cat{
-        display: grid;
-       
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .search_main_page{

@@ -4,7 +4,10 @@
   background: #f2f3f4;
   border-radius: 6px 6px 6px 6px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.footer_heading{
+  background: #f2f3f4;
 }
 .footer_main p {
   padding: 10px;
@@ -17,19 +20,20 @@
   margin: 40px auto;
 }
 .catrgory_footer {
-  width: 30%;
+
   text-align: justify;
   margin: 40px auto;
 }
 .catrgory_footer p {
   padding: 1px;
+  font-weight: 200px;
 }
 .catrgory_footer p:hover {
   padding: 1px;
   color: #2980b9;
 }
 .social_media {
-  width: 30%;
+
   text-align: justify;
   margin: 40px auto;
 }
@@ -40,6 +44,20 @@
 }
 .social_media ul li {
   padding: 7px;
+}
+
+.footer_contact{
+  text-align: justify;
+  margin: 40px auto;
+}
+.footer_contact_home{
+  display: flex;
+  margin: 6px auto;
+}
+.home{
+  font-size: 26px;
+  padding-right: 6px;
+  color:  #34495e ;
 }
 
 .instagram {
@@ -166,6 +184,8 @@
     font-weight: 600;
 }
 
+
+
 @media screen and (max-width: 980px) {
   .footer_main {
     width: 100%;
@@ -201,4 +221,9 @@
   .social_media ul li {
     padding: 7px;
   }
+  .footer_contact{
+    text-align: ju;
+    margin: 10px auto;
+  }
+ 
 }
